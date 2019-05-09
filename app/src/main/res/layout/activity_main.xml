@@ -17,10 +17,12 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:orientation="horizontal">
         <LinearLayout
             android:orientation="vertical"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content">
             <EditText
                 android:maxLines="1"
@@ -40,7 +42,8 @@
         </LinearLayout>
         <LinearLayout
             android:orientation="vertical"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content">
             <EditText
                 android:maxLines="1"
@@ -61,7 +64,10 @@
     </LinearLayout>
     <Button
         android:id="@+id/button"
-        android:text="generate"
+        android:textSize="20dp"
+        android:text="generate!"
+        android:background="@color/red"
+        android:padding="20dp"
         android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
@@ -71,31 +77,43 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <Button
-            android:id="@+id/one_die"
+            android:id="@+id/D6"
             android:text="D6"
-            android:layout_marginRight="2dp"
+            android:layout_marginRight="1dp"
             android:layout_gravity="bottom"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"/>
         <Button
             android:id="@+id/D8"
             android:text="D8"
-            android:layout_marginRight="2dp"
+            android:layout_marginRight="1dp"
             android:layout_gravity="bottom"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"/>
         <Button
             android:id="@+id/D10"
             android:text="D10"
-            android:layout_marginRight="2dp"
+            android:layout_marginRight="1dp"
             android:layout_gravity="bottom"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"/>
         <Button
             android:id="@+id/D20"
             android:text="D20"
+            android:layout_marginRight="1dp"
             android:layout_gravity="bottom"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/D100"
+            android:text="D100"
+            android:layout_gravity="bottom"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
     </LinearLayout>
 </LinearLayout>

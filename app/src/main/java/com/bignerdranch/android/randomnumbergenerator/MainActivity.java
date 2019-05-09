@@ -16,6 +16,8 @@ public class MainActivity extends AppCompatActivity {
     private Button mD6;
     private Button mD8;
     private Button mD10;
+    private Button mD100;
+
     private TextView mRandomNumber;
     private EditText mMin;
     private EditText mMax;
@@ -79,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        mD6 = (Button)findViewById(R.id.one_die);
+        mD6 = (Button)findViewById(R.id.D6);
         mD6.setOnClickListener(new View.OnClickListener(){
 
             @Override
@@ -97,6 +99,16 @@ public class MainActivity extends AppCompatActivity {
                 mMin.setText("1");
                 mMax.setText("10");
                 Toast.makeText(getBaseContext(), "D10 selected", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        mD100 = (Button) findViewById(R.id.D100);
+        mD100.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mMin.setText("1");
+                mMax.setText("100");
+                Toast.makeText(getBaseContext(), "D100 selected", Toast.LENGTH_SHORT).show();
             }
         });
 
